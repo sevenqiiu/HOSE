@@ -1,0 +1,14 @@
+{
+    "shallow": {
+        "threshold": (5e-02~1e-02),
+        "erase_scale": (10~25)
+    },
+    "middle": {
+        "threshold": (1e-02~0.22)
+        "erase_scale": (12~20)
+    },
+    "deep": {
+        "threshold": (5e-02~2e-02),
+        "erase_scale": (18~26)
+    }
+}
