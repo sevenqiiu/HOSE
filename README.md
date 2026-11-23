@@ -30,3 +30,17 @@ Replace the concept and SVD file path for your experiment. Use `--concept_type o
 ## JSON Parameters
 
 `optimal_params.json` supplies the `threshold` and `erase_scale` for the three layer groups (`shallow`, `middle`, and `deep`). The editing script reads these values to construct projection matrices and control erasure strength.
+
+## Pretrained Weights
+
+The edited HOSE weights for Stable Diffusion v1.4 are available from [GitHub Releases](https://github.com/sevenqiiu/HOSE/releases).
+
+| File | Erased concept |
+| --- | --- |
+| `church.safetensors` | Church |
+| `Englishspringer.safetensors` | English Springer Spaniel |
+| `nudity.safetensors` | Nudity |
+| `parachute.safetensors` | Parachute |
+| `violence.safetensors` | Violence |
+
+These files contain edited cross-attention weights, not the full Stable Diffusion model. Download the desired file and pass its path to `generate-images-sd.py` using `--hnse_model_path`.
